@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>新的开始 | Valyrian&#39;sBlog</title>
+    <title>从已排序数组删除冗余元素 | Valyrian&#39;sBlog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="Valyrian">
     
-    <meta name="description" content="勤做笔记、勤记忆。">
+    <meta name="description" content="`// 要求荣誉元素至多为N个。class Solution {public:    int removeDuplicates(vector&amp;amp; nums) {        if (nums.size() &amp;lt; = N) return nums.size();
+    int index">
     
     
     
@@ -65,15 +66,15 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/Blog/2016/03/03/新的开始/" title="新的开始" itemprop="url">新的开始</a>
+      <a href="/Blog/2016/03/04/从已排序数组删除冗余元素/" title="从已排序数组删除冗余元素" itemprop="url">从已排序数组删除冗余元素</a>
   </h1>
   <p class="article-author">By
     
       <a href="http://ValyrianSteel.github.io/Blog" title="Valyrian">Valyrian</a>
     </p>
   <p class="article-time">
-    <time datetime="2016-03-03T13:08:20.000Z" itemprop="datePublished">2016-03-03</time>
-    Updated:<time datetime="2016-03-03T13:09:08.113Z" itemprop="dateModified">2016-03-03</time>
+    <time datetime="2016-03-04T02:35:27.000Z" itemprop="datePublished">2016-03-04</time>
+    Updated:<time datetime="2016-03-04T02:43:50.515Z" itemprop="dateModified">2016-03-04</time>
     
   </p>
 </header>
@@ -85,7 +86,16 @@
 		
 		</div>
 		
-		<p>勤做笔记、勤记忆。</p>
+		<p>`<br>// 要求荣誉元素至多为N个。<br>class Solution {<br>public:<br>    int removeDuplicates(vector<int>&amp; nums) {<br>        if (nums.size() &lt; = N) return nums.size();</int></p>
+<pre><code>    int index = N;
+    for (int i = N; i &lt; nums.size(); i++) {
+        if (nums[index - N] != nums[i]) {
+            nums[index++] = nums[i];
+        }
+    }
+    return index;
+}
+</code></pre><p>};<br>`</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -95,7 +105,7 @@
 
 <div class="article-share" id="share">
 
-  <div data-url="http://ValyrianSteel.github.io/Blog/Blog/2016/03/03/新的开始/" data-title="新的开始 | Valyrian&#39;sBlog" data-tsina="null" class="share clearfix">
+  <div data-url="http://ValyrianSteel.github.io/Blog/Blog/2016/03/04/从已排序数组删除冗余元素/" data-title="从已排序数组删除冗余元素 | Valyrian&#39;sBlog" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -104,19 +114,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/Blog/2016/03/04/从已排序数组删除冗余元素/" title="从已排序数组删除冗余元素">
-  <strong>PREVIOUS:</strong><br/>
-  <span>
-  从已排序数组删除冗余元素</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/Blog/2016/03/03/hello-world/"  title="Hello World">
+<a href="/Blog/2016/03/03/新的开始/"  title="新的开始">
  <strong>NEXT:</strong><br/> 
- <span>Hello World
+ <span>新的开始
 </span>
 </a>
 </div>
