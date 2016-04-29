@@ -1,101 +1,127 @@
-
- <!DOCTYPE HTML>
-<html >
+<!DOCTYPE HTML>
+<html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   
-    <title>C/C++编译环境搭建 | Valyrian&#39;sBlog</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
-    
-    <meta name="author" content="Valyrian">
-    
-    <meta name="description" content="包管理器编译器gccClang
+  <title>C/C++编译环境搭建 | Valyrian&#39;sBlog</title>
+  <meta name="author" content="Valyrian">
+  
+  <meta name="description" content="包管理器编译器gccClang
 调试器gdb
 Valgrind测试内存使用错误
 gprof代码剖析器
-makepkg-config寻找库的工具，使用见下面库文件的路径。
-产生文档的工具编辑器的选择EmacsvimKatenano
-一些IDE的选择AutotoolsGitshell的替代品常用的编译器">
-    
-    
-    
-    
-    
-    <link rel="icon" href="/Blog/img/favicon.ico">
-    
-    
-    <link rel="apple-touch-icon" href="/Blog/img/pacman.jpg">
-    <link rel="apple-touch-icon-precomposed" href="/Blog/img/pacman.jpg">
-    
-    <link rel="stylesheet" href="/Blog/css/style.css">
+makepkg-configpkg-config是向程序提供相应库的路径、版本号等信息的程序。如：$pkg-config –libs –cflags opencv会显示如下信息：-I/usr/inc">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="C/C++编译环境搭建"/>
+  <meta property="og:site_name" content="Valyrian&#39;sBlog"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  
+  
+    <link href="/Blog/favicon.png" rel="icon">
+  
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/Blog/css/themes/cerulean.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/Blog/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/Blog/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/Blog/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/Blog/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/Blog/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/Blog/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+
+
+
 </head>
 
-  <body>
-    <header>
-      <div>
-		
-			<div id="imglogo">
-				<a href="/Blog/"><img src="/Blog/img/logo.svg" alt="Valyrian&#39;sBlog" title="Valyrian&#39;sBlog"/></a>
-			</div>
-			
-			<div id="textlogo">
-				<h1 class="site-name"><a href="/Blog/" title="Valyrian&#39;sBlog">Valyrian&#39;sBlog</a></h1>
-				<h2 class="blog-motto">God is in the details.  ---Mies van der Rohe</h2>
-			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
-			</a></div>
-			<nav class="animated">
-				<ul>
-					
-						<li><a href="/Blog/">Home</a></li>
-					
-						<li><a href="/Blog/archives">Archives</a></li>
-					
-					<li>
-					
-					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
-						<label>Search</label>
-						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
-						<input type="hidden" name="q" value="site:ValyrianSteel.github.io/Blog">
-					</form>
-					
-					</li>
-				</ul>
-			</nav>			
-</div>
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+       <a class="navbar-brand" href="/Blog/">Valyrian&#39;sBlog</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/Blog/archives" title="All the articles.">
+			  <i class="fa fa-archive"></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/Blog/categories" title="All the categories.">
+			  <i class="fa fa-folder"></i>Categories
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/Blog/tags" title="All the tags.">
+			  <i class="fa fa-tags"></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/Blog/about" title="About me.">
+			  <i class="fa fa-user"></i>About
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
 
-    </header>
-    <div id="container">
-      <div id="main" class="post" itemscope itemprop="blogPost">
-	<article itemprop="articleBody"> 
-		<header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/Blog/2016/03/20/C-C-编译环境搭建/" title="C/C++编译环境搭建" itemprop="url">C/C++编译环境搭建</a>
-  </h1>
-  <p class="article-author">By
-    
-      <a href="http://ValyrianSteel.github.io/Blog" title="Valyrian">Valyrian</a>
-    </p>
-  <p class="article-time">
-    <time datetime="2016-03-20T12:05:11.000Z" itemprop="datePublished">2016-03-20</time>
-    Updated:<time datetime="2016-03-20T14:23:10.952Z" itemprop="dateModified">2016-03-20</time>
-    
-  </p>
-</header>
-	<div class="article-content">
-		
-		
-		<div id="toc" class="toc-article">
-			<strong class="toc-title">Contents</strong>
-		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#包管理器"><span class="toc-number">1.</span> <span class="toc-text">包管理器</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#编译器"><span class="toc-number">1.1.</span> <span class="toc-text">编译器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#调试器"><span class="toc-number">1.2.</span> <span class="toc-text">调试器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Valgrind"><span class="toc-number">1.3.</span> <span class="toc-text">Valgrind</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#gprof"><span class="toc-number">1.4.</span> <span class="toc-text">gprof</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#make"><span class="toc-number">1.5.</span> <span class="toc-text">make</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pkg-config"><span class="toc-number">1.6.</span> <span class="toc-text">pkg-config</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#产生文档的工具"><span class="toc-number">1.7.</span> <span class="toc-text">产生文档的工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#编辑器的选择"><span class="toc-number">1.8.</span> <span class="toc-text">编辑器的选择</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一些IDE的选择"><span class="toc-number">1.9.</span> <span class="toc-text">一些IDE的选择</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Autotools"><span class="toc-number">1.10.</span> <span class="toc-text">Autotools</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git"><span class="toc-number">1.11.</span> <span class="toc-text">Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#shell的替代品"><span class="toc-number">1.12.</span> <span class="toc-text">shell的替代品</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#常用的编译器选项"><span class="toc-number">2.</span> <span class="toc-text">常用的编译器选项</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#库的路径"><span class="toc-number">3.</span> <span class="toc-text">库的路径</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#库文件在哪里"><span class="toc-number">3.1.</span> <span class="toc-text">库文件在哪里</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#库文件的查找"><span class="toc-number">3.2.</span> <span class="toc-text">库文件的查找</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在命令行里包含头文件"><span class="toc-number">3.3.</span> <span class="toc-text">在命令行里包含头文件</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Makefile的使用"><span class="toc-number">4.</span> <span class="toc-text">Makefile的使用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Here-Documents-amp-Compiling-from-stdin"><span class="toc-number">5.</span> <span class="toc-text">Here Documents & Compiling from stdin</span></a></li></ol>
-		</div>
-		
-		<h1 id="包管理器"><a href="#包管理器" class="headerlink" title="包管理器"></a>包管理器</h1><h2 id="编译器"><a href="#编译器" class="headerlink" title="编译器"></a>编译器</h2><p><code>gcc</code><br><code>Clang</code></p>
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header page-header-inverse ">		
+			<h1 class="title title-inverse "> C/C++编译环境搭建</h1>
+		</div>		
+	
+
+
+
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <h1 id="包管理器"><a href="#包管理器" class="headerlink" title="包管理器"></a>包管理器</h1><h2 id="编译器"><a href="#编译器" class="headerlink" title="编译器"></a>编译器</h2><p><code>gcc</code><br><code>Clang</code></p>
 <h2 id="调试器"><a href="#调试器" class="headerlink" title="调试器"></a>调试器</h2><p><code>gdb</code></p>
 <h2 id="Valgrind"><a href="#Valgrind" class="headerlink" title="Valgrind"></a>Valgrind</h2><p>测试内存使用错误</p>
 <h2 id="gprof"><a href="#gprof" class="headerlink" title="gprof"></a>gprof</h2><p>代码剖析器</p>
-<h2 id="make"><a href="#make" class="headerlink" title="make"></a>make</h2><h2 id="pkg-config"><a href="#pkg-config" class="headerlink" title="pkg-config"></a>pkg-config</h2><p>寻找库的工具，使用见下面库文件的路径。</p>
+<h2 id="make"><a href="#make" class="headerlink" title="make"></a>make</h2><h2 id="pkg-config"><a href="#pkg-config" class="headerlink" title="pkg-config"></a>pkg-config</h2><p>pkg-config是向程序提供相应库的路径、版本号等信息的程序。<br>如：<br>$pkg-config –libs –cflags opencv<br>会显示如下信息：<br>-I/usr/include/opencv -lcxcore -lcv -lhighgui -lcvaux<br>得到的是用gcc编译连接时CFLAGS的参数。因此当我们需要编译连接某个库时，我们只需要把上面那行加入gcc 的参数里面即可。这也是configure的作用，它会检查你需要的包，产生相应的信息。<br>那pkg-config从哪儿知道这些信息的呢？它是从包名为xxx.pc这个文件中查找到的。拿上面那个例子说，它是从opencv.pc这个文件中查知的。<br>那pkg-config 又怎么会知道opencv.pc这个文件呢？下面我们看一下pkg-config是怎样工作的。<br>缺省情况下，pkg-config首先在prefix/lib/pkgconfig/中查找相关包（譬如opencv）对应的相应的文件（opencv.pc）。在linux上上述路径名为 /usr/lib/pkconfig/。若是没有找到，它也会到PKG_CONFIG_PATH这个环境变量所指定的路径下去找。若是没有找到，它就会报错，例如：<br><code>Package opencv was not found in the pkg-config search path.
+Perhaps you should add the directory containing</code>opencv.pc’<br>to the PKG_CONFIG_PATH environment variable<br>No package ‘opencv’ found<br>`</p>
+<p>寻找库的工具，使用见下面库文件的路径。</p>
 <h2 id="产生文档的工具"><a href="#产生文档的工具" class="headerlink" title="产生文档的工具"></a>产生文档的工具</h2><h2 id="编辑器的选择"><a href="#编辑器的选择" class="headerlink" title="编辑器的选择"></a>编辑器的选择</h2><p><code>Emacs</code><br><code>vim</code><br><code>Kate</code><br><code>nano</code></p>
 <h2 id="一些IDE的选择"><a href="#一些IDE的选择" class="headerlink" title="一些IDE的选择"></a>一些IDE的选择</h2><h2 id="Autotools"><a href="#Autotools" class="headerlink" title="Autotools"></a>Autotools</h2><h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><h2 id="shell的替代品"><a href="#shell的替代品" class="headerlink" title="shell的替代品"></a>shell的替代品</h2><h1 id="常用的编译器选项"><a href="#常用的编译器选项" class="headerlink" title="常用的编译器选项"></a>常用的编译器选项</h1><p><code>-g</code> - 加入调试符号<br><code>-std=gnu11</code> - C11标准<br><code>-O2</code> - 优化等级<br><code>-Wall</code> - 添加编译器警告</p>
 <h1 id="库的路径"><a href="#库的路径" class="headerlink" title="库的路径"></a>库的路径</h1><p>C程序设计时，常常遇到找不到路径的问题。<br>对路径的理解，有助于问题的排查。</p>
@@ -106,226 +132,162 @@ makepkg-config寻找库的工具，使用见下面库文件的路径。
 <h1 id="Makefile的使用"><a href="#Makefile的使用" class="headerlink" title="Makefile的使用"></a>Makefile的使用</h1><p>一个基本的makefile：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">P=program_name</span><br><span class="line">OBJECTS=</span><br><span class="line">CFLAGS = -g -Wall -O3</span><br><span class="line">LDLIBS=</span><br><span class="line">CC=c99</span><br><span class="line">$(P): $(OBJECTS)</span><br></pre></td></tr></table></figure></p>
 <p>$(var) 设置变量<br>$@ 返回完整的目标文件名<br>$* 不带文件名后缀的输出文件<br>$&lt; 当前目标的文件名称<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">target: dependencies</span><br><span class="line">    script</span><br></pre></td></tr></table></figure></p>
 <p>…关于make的使用有待补充</p>
-<h1 id="Here-Documents-amp-Compiling-from-stdin"><a href="#Here-Documents-amp-Compiling-from-stdin" class="headerlink" title="Here Documents &amp; Compiling from stdin"></a>Here Documents &amp; Compiling from stdin</h1>  
+<h1 id="Here-Documents-amp-Compiling-from-stdin"><a href="#Here-Documents-amp-Compiling-from-stdin" class="headerlink" title="Here Documents &amp; Compiling from stdin"></a>Here Documents &amp; Compiling from stdin</h1>	  
 	</div>
-		<footer class="article-footer clearfix">
 
-  <div class="article-tags">
-  
-  <span></span> <a href="/Blog/tags/C编程的一些技术/">C编程的一些技术</a>
-  </div>
+	<div>
+  	<center>
+	<div class="pagination">
+<ul class="pagination">
+	 
+				
+    	<li class="prev"><a href="/Blog/2016/03/20/C中的环境变量/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>Prev</a></li>
+  		
 
+        <li><a href="/Blog/archives"><i class="fa fa-archive"></i>Archive</a></li>
 
-
-
-<div class="article-share" id="share">
-
-  <div data-url="http://ValyrianSteel.github.io/Blog/Blog/2016/03/20/C-C-编译环境搭建/" data-title="C/C++编译环境搭建 | Valyrian&#39;sBlog" data-tsina="null" class="share clearfix">
-  </div>
-
-</div>
-</footer>   	       
-	</article>
-	
-<nav class="article-nav clearfix">
- 
- <div class="prev" >
- <a href="/Blog/2016/03/20/C中的环境变量/" title="C中的环境变量">
-  <strong>PREVIOUS:</strong><br/>
-  <span>
-  C中的环境变量</span>
-</a>
-</div>
-
-
-<div class="next">
-<a href="/Blog/2016/03/17/如何避免使用goto语句/"  title="如何避免使用goto语句">
- <strong>NEXT:</strong><br/> 
- <span>如何避免使用goto语句
-</span>
-</a>
-</div>
-
-</nav>
-
-	
-</div>  
-      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
-
-  <div id="toc" class="toc-aside">
-  <strong class="toc-title">Contents</strong>
-  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#包管理器"><span class="toc-number">1.</span> <span class="toc-text">包管理器</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#编译器"><span class="toc-number">1.1.</span> <span class="toc-text">编译器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#调试器"><span class="toc-number">1.2.</span> <span class="toc-text">调试器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Valgrind"><span class="toc-number">1.3.</span> <span class="toc-text">Valgrind</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#gprof"><span class="toc-number">1.4.</span> <span class="toc-text">gprof</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#make"><span class="toc-number">1.5.</span> <span class="toc-text">make</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pkg-config"><span class="toc-number">1.6.</span> <span class="toc-text">pkg-config</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#产生文档的工具"><span class="toc-number">1.7.</span> <span class="toc-text">产生文档的工具</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#编辑器的选择"><span class="toc-number">1.8.</span> <span class="toc-text">编辑器的选择</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一些IDE的选择"><span class="toc-number">1.9.</span> <span class="toc-text">一些IDE的选择</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Autotools"><span class="toc-number">1.10.</span> <span class="toc-text">Autotools</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git"><span class="toc-number">1.11.</span> <span class="toc-text">Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#shell的替代品"><span class="toc-number">1.12.</span> <span class="toc-text">shell的替代品</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#常用的编译器选项"><span class="toc-number">2.</span> <span class="toc-text">常用的编译器选项</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#库的路径"><span class="toc-number">3.</span> <span class="toc-text">库的路径</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#库文件在哪里"><span class="toc-number">3.1.</span> <span class="toc-text">库文件在哪里</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#库文件的查找"><span class="toc-number">3.2.</span> <span class="toc-text">库文件的查找</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在命令行里包含头文件"><span class="toc-number">3.3.</span> <span class="toc-text">在命令行里包含头文件</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Makefile的使用"><span class="toc-number">4.</span> <span class="toc-text">Makefile的使用</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Here-Documents-amp-Compiling-from-stdin"><span class="toc-number">5.</span> <span class="toc-text">Here Documents & Compiling from stdin</span></a></li></ol>
-  </div>
-
-<div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
-<aside class="clearfix">
-
-  
-
-  
-<div class="tagslist">
-	<p class="asidetitle">Tags</p>
-		<ul class="clearfix">
 		
-			<li><a href="/Blog/tags/C编程的一些技术/" title="C编程的一些技术">C编程的一些技术<sup>2</sup></a></li>
-		
-			<li><a href="/Blog/tags/散列/" title="散列">散列<sup>1</sup></a></li>
-		
-			<li><a href="/Blog/tags/程序设计语言实现/" title="程序设计语言实现">程序设计语言实现<sup>1</sup></a></li>
-		
-			<li><a href="/Blog/tags/算法/" title="算法">算法<sup>1</sup></a></li>
-		
-			<li><a href="/Blog/tags/编程/" title="编程">编程<sup>1</sup></a></li>
-		
-		</ul>
-</div>
-
-
-  <div class="rsspart">
-	<a href="null" target="_blank" title="rss">RSS</a>
-</div>
-
-</aside>
-</div>
-    </div>
-    <footer><div id="footer" >
-	
-	<div class="line">
-		<span></span>
-		<div class="author"></div>
-	</div>
-	
-	
-	<div class="social-font clearfix">
-		
-		
-		
-		<a href="https://github.com/ValyrianSteel" target="_blank" title="github"></a>
-		
-		
-		
-	</div>
-		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2016 
-		
-		<a href="http://ValyrianSteel.github.io/Blog" target="_blank" title="Valyrian">Valyrian</a>
-		
-		</p>
-</div>
-</footer>
-    <script src="/Blog/js/jquery-2.1.0.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){ 
-  $('.navbar').click(function(){
-    $('header nav').toggleClass('shownav');
-  });
-  var myWidth = 0;
-  function getSize(){
-    if( typeof( window.innerWidth ) == 'number' ) {
-      myWidth = window.innerWidth;
-    } else if( document.documentElement && document.documentElement.clientWidth) {
-      myWidth = document.documentElement.clientWidth;
-    };
-  };
-  var m = $('#main'),
-      a = $('#asidepart'),
-      c = $('.closeaside'),
-      o = $('.openaside');
-  $(window).resize(function(){
-    getSize(); 
-    if (myWidth >= 1024) {
-      $('header nav').removeClass('shownav');
-    }else
-    {
-      m.removeClass('moveMain');
-      a.css('display', 'block').removeClass('fadeOut');
-      o.css('display', 'none');
-      
-      $('#toc.toc-aside').css('display', 'none');
+		   <li class="next"><a href="/Blog/2016/03/17/如何避免使用goto语句/" class="alignright next">Next<i class="fa fa-arrow-circle-o-right"></i></a></li>         
         
-    }
-  });
-  c.click(function(){
-    a.addClass('fadeOut').css('display', 'none');
-    o.css('display', 'block').addClass('fadeIn');
-    m.addClass('moveMain');
-  });
-  o.click(function(){
-    o.css('display', 'none').removeClass('beforeFadeIn');
-    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
-    m.removeClass('moveMain');
-  });
-  $(window).scroll(function(){
-    o.css("top",Math.max(80,260-$(this).scrollTop()));
-  });
-});
-</script>
+	
+</ul>
+</div>
+
+    </center>
+	</div>
+
+    <!-- share -->
+    
+        
+    <div class="bdsharebuttonbox">
+        <a href="#" class="bds_more" data-cmd="more"></a>
+        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+        <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+        <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+        <a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+        <a href="#" class="bds_evernotecn" data-cmd="evernotecn" title="分享到印象笔记"></a>
+        <a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a>
+        <a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+    </div>
+    <script>
+        window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};
+        with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+    </script>
+
+
+        
+
+    
+	
+	<!-- comment -->
+	
+<section id="comment">
+  <h2 class="title">Comments</h2>
+
+  
+  	 <div class="ds-thread" data-thread-key="2016/03/20/C-C-编译环境搭建/" data-title="C/C++编译环境搭建" data-url="http://ValyrianSteel.github.io/Blog/Blog/2016/03/20/C-C-编译环境搭建/"></div>  
+  
+</section>
+
+	</div> <!-- col-md-9/col-md-12 -->
+		
+	
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2016-03-20 
+	</div>
+	
+
+	<!-- categories -->
+    
+
+	<!-- tags -->
+	
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
+    <ul id="tags" class="tag_box list-unstyled collapse in">	  
+	    
+  <li><a href="/Blog/tags/C编程的一些技术/">C编程的一些技术<span>2</span></a></li>
+    </ul>
+	</div>
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	</div>
+		
+
+</div><!-- row -->
 
 <script type="text/javascript">
-$(document).ready(function(){ 
-  var ai = $('.article-content>iframe'),
-      ae = $('.article-content>embed'),
-      t  = $('#toc'),
-      h  = $('article h2')
-      ah = $('article h2'),
-      ta = $('#toc.toc-aside'),
-      o  = $('.openaside'),
-      c  = $('.closeaside');
-  if(ai.length>0){
-    ai.wrap('<div class="video-container" />');
-  };
-  if(ae.length>0){
-   ae.wrap('<div class="video-container" />');
-  };
-  if(ah.length==0){
-    t.css('display','none');
-  }else{
-    c.click(function(){
-      ta.css('display', 'block').addClass('fadeIn');
-    });
-    o.click(function(){
-      ta.css('display', 'none');
-    });
-    $(window).scroll(function(){
-      ta.css("top",Math.max(140,320-$(this).scrollTop()));
-    });
-  };
-});
+  var duoshuoQuery = { short_name: 'valyrian' };
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';
+    ds.async = true;
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
 </script>
 
 
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+  &copy; 2016 Valyrian
+  
+      with help from <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>.    
+</p> </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/Blog/js/jquery.imagesloaded.min.js"></script>
+<script src="/Blog/js/gallery.js"></script>
+<script src="/Blog/js/bootstrap.min.js"></script>
+<script src="/Blog/js/main.js"></script>
+<script src="/Blog/js/search.js"></script> 
+
+
+<link rel="stylesheet" href="/Blog/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/Blog/fancybox/jquery.fancybox.pack.js"></script>
 <script type="text/javascript">
-$(document).ready(function(){ 
-  var $this = $('.share'),
-      url = $this.attr('data-url'),
-      encodedUrl = encodeURIComponent(url),
-      title = $this.attr('data-title'),
-      tsina = $this.attr('data-tsina');
-  var html = [
-  '<a href="#" class="overlay" id="qrcode"></a>',
-  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
-  '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
-  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
-  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
-  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
-  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
-  '<span title="Share to"></span>'
-  ].join('');
-  $this.append(html);
-  $('.article-share-qrcode').click(function(){
-    var imgSrc = $('#qrcode-pic').attr('data-src');
-    $('#qrcode-pic').attr('src', imgSrc);
-    $('#qrcode-pic').load(function(){
-        $('.qrcode strong').text(' ');
-    });
-  });
-});     
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
 </script>
 
 
 
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/Blog/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
 
-
-
-  </body>
-</html>
+</body>
+   </html>

@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>OSX安装qemu | Valyrian&#39;sBlog</title>
+  <meta name="author" content="Valyrian">
+  
+  <meta name="description" content="sudo brew install qemu12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="OSX安装qemu"/>
+  <meta property="og:site_name" content="Valyrian&#39;sBlog"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  
+  
+    <link href="/Blog/favicon.png" rel="icon">
+  
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/Blog/css/themes/cerulean.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/Blog/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/Blog/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/Blog/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/Blog/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/Blog/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/Blog/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+
+
+
+</head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+       <a class="navbar-brand" href="/Blog/">Valyrian&#39;sBlog</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/Blog/archives" title="All the articles.">
+			  <i class="fa fa-archive"></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/Blog/categories" title="All the categories.">
+			  <i class="fa fa-folder"></i>Categories
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/Blog/tags" title="All the tags.">
+			  <i class="fa fa-tags"></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/Blog/about" title="About me.">
+			  <i class="fa fa-user"></i>About
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header page-header-inverse ">		
+			<h1 class="title title-inverse "> OSX安装qemu</h1>
+		</div>		
+	
+
+
+
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <p><code>sudo brew install qemu</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br></pre></td><td class="code"><pre><span class="line">==&gt; Installing dependencies for qemu: jpeg, libpng, libtasn1, gmp, nettle</span><br><span class="line">==&gt; Installing qemu dependency: jpeg</span><br><span class="line">==&gt; Downloading https://homebrew.bintray.com/bottles/jpeg-8d.el_capitan.bottle.2</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">==&gt; Pouring jpeg-8d.el_capitan.bottle.2.tar.gz</span><br><span class="line">Error: The `brew link` step did not complete successfully</span><br><span class="line">The formula built, but is not symlinked into /usr/local</span><br><span class="line">Could not symlink include/jconfig.h</span><br><span class="line">/usr/local/include is not writable.</span><br><span class="line"></span><br><span class="line">You can try again using:</span><br><span class="line">  brew link jpeg</span><br><span class="line">==&gt; Summary</span><br><span class="line">🍺  /usr/local/Cellar/jpeg/8d: 18 files, 712.4K</span><br><span class="line">==&gt; Installing qemu dependency: libpng</span><br><span class="line">==&gt; Downloading https://homebrew.bintray.com/bottles/libpng-1.6.21.el_capitan.bo</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">==&gt; Pouring libpng-1.6.21.el_capitan.bottle.tar.gz</span><br><span class="line">Error: The `brew link` step did not complete successfully</span><br><span class="line">The formula built, but is not symlinked into /usr/local</span><br><span class="line">Could not symlink include/libpng16</span><br><span class="line">/usr/local/include is not writable.</span><br><span class="line"></span><br><span class="line">You can try again using:</span><br><span class="line">  brew link libpng</span><br><span class="line">==&gt; Summary</span><br><span class="line">🍺  /usr/local/Cellar/libpng/1.6.21: 17 files, 1.2M</span><br><span class="line">==&gt; Installing qemu dependency: libtasn1</span><br><span class="line">==&gt; Downloading https://homebrew.bintray.com/bottles/libtasn1-4.7.el_capitan.bot</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">==&gt; Pouring libtasn1-4.7.el_capitan.bottle.tar.gz</span><br><span class="line">Error: The `brew link` step did not complete successfully</span><br><span class="line">The formula built, but is not symlinked into /usr/local</span><br><span class="line">Could not symlink include/libtasn1.h</span><br><span class="line">/usr/local/include is not writable.</span><br><span class="line"></span><br><span class="line">You can try again using:</span><br><span class="line">  brew link libtasn1</span><br><span class="line">==&gt; Summary</span><br><span class="line">🍺  /usr/local/Cellar/libtasn1/4.7: 57 files, 434.1K</span><br><span class="line">==&gt; Installing qemu dependency: gmp</span><br><span class="line">==&gt; Downloading https://homebrew.bintray.com/bottles/gmp-6.1.0.el_capitan.bottle</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">==&gt; Pouring gmp-6.1.0.el_capitan.bottle.tar.gz</span><br><span class="line">Error: The `brew link` step did not complete successfully</span><br><span class="line">The formula built, but is not symlinked into /usr/local</span><br><span class="line">Could not symlink include/gmp.h</span><br><span class="line">/usr/local/include is not writable.</span><br><span class="line"></span><br><span class="line">You can try again using:</span><br><span class="line">  brew link gmp</span><br><span class="line">==&gt; Summary</span><br><span class="line">🍺  /usr/local/Cellar/gmp/6.1.0: 15 files, 3.2M</span><br><span class="line">==&gt; Installing qemu dependency: nettle</span><br><span class="line">==&gt; Downloading https://homebrew.bintray.com/bottles/nettle-3.2.el_capitan.bottl</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">==&gt; Pouring nettle-3.2.el_capitan.bottle.tar.gz</span><br><span class="line">Error: The `brew link` step did not complete successfully</span><br><span class="line">The formula built, but is not symlinked into /usr/local</span><br><span class="line">Could not symlink include/nettle</span><br><span class="line">/usr/local/include is not writable.</span><br><span class="line"></span><br><span class="line">You can try again using:</span><br><span class="line">  brew link nettle</span><br><span class="line">==&gt; Summary</span><br><span class="line">🍺  /usr/local/Cellar/nettle/3.2: 75 files, 1.9M</span><br><span class="line">==&gt; Installing qemu dependency: gnutls</span><br><span class="line">==&gt; Downloading https://homebrew.bintray.com/bottles/gnutls-3.4.10.el_capitan.bo</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">==&gt; Pouring gnutls-3.4.10.el_capitan.bottle.tar.gz</span><br><span class="line">Error: The `brew link` step did not complete successfully</span><br><span class="line">The formula built, but is not symlinked into /usr/local</span><br><span class="line">Could not symlink include/gnutls</span><br><span class="line">/usr/local/include is not writable.</span><br><span class="line"></span><br><span class="line">You can try again using:</span><br><span class="line">  brew link gnutls</span><br><span class="line">==&gt; Summary</span><br><span class="line">🍺  /usr/local/Cellar/gnutls/3.4.10: 1,094 files, 6.8M</span><br><span class="line">==&gt; Installing qemu dependency: gettext</span><br><span class="line">==&gt; Downloading https://homebrew.bintray.com/bottles/gettext-0.19.7.el_capitan.b</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">==&gt; Pouring gettext-0.19.7.el_capitan.bottle.tar.gz</span><br><span class="line">==&gt; Caveats</span><br><span class="line">This formula is keg-only, which means it was not symlinked into /usr/local.</span><br><span class="line"></span><br><span class="line">OS X provides the BSD gettext library and some software gets confused if both are in the library path.</span><br><span class="line"></span><br><span class="line">Generally there are no consequences of this for you. If you build your</span><br><span class="line">own software and it requires this formula, you&apos;ll need to add to your</span><br><span class="line">build variables:</span><br><span class="line"></span><br><span class="line">    LDFLAGS:  -L/usr/local/opt/gettext/lib</span><br><span class="line">    CPPFLAGS: -I/usr/local/opt/gettext/include</span><br><span class="line"></span><br><span class="line">==&gt; Summary</span><br><span class="line">🍺  /usr/local/Cellar/gettext/0.19.7: 1,929 files, 16.6M</span><br><span class="line">==&gt; Installing qemu dependency: libffi</span><br><span class="line">==&gt; Downloading https://homebrew.bintray.com/bottles/libffi-3.0.13.el_capitan.bo</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">==&gt; Pouring libffi-3.0.13.el_capitan.bottle.tar.gz</span><br><span class="line">==&gt; Caveats</span><br><span class="line">This formula is keg-only, which means it was not symlinked into /usr/local.</span><br><span class="line"></span><br><span class="line">Some formulae require a newer version of libffi.</span><br><span class="line"></span><br><span class="line">Generally there are no consequences of this for you. If you build your</span><br><span class="line">own software and it requires this formula, you&apos;ll need to add to your</span><br><span class="line">build variables:</span><br><span class="line"></span><br><span class="line">    LDFLAGS:  -L/usr/local/opt/libffi/lib</span><br><span class="line"></span><br><span class="line">==&gt; Summary</span><br><span class="line">🍺  /usr/local/Cellar/libffi/3.0.13: 14 files, 373.2K</span><br><span class="line">==&gt; Installing qemu dependency: glib</span><br><span class="line">==&gt; Downloading https://homebrew.bintray.com/bottles/glib-2.46.2.el_capitan.bott</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">==&gt; Pouring glib-2.46.2.el_capitan.bottle.tar.gz</span><br><span class="line">Error: The `brew link` step did not complete successfully</span><br><span class="line">The formula built, but is not symlinked into /usr/local</span><br><span class="line">Could not symlink include/gio-unix-2.0</span><br><span class="line">/usr/local/include is not writable.</span><br><span class="line"></span><br><span class="line">You can try again using:</span><br><span class="line">  brew link glib</span><br><span class="line">Warning: The post-install step did not complete successfully</span><br><span class="line">You can try again using `brew postinstall glib`</span><br><span class="line">==&gt; Summary</span><br><span class="line">🍺  /usr/local/Cellar/glib/2.46.2: 421 files, 22.3M</span><br><span class="line">==&gt; Installing qemu dependency: pixman</span><br><span class="line">==&gt; Downloading https://homebrew.bintray.com/bottles/pixman-0.34.0.el_capitan.bo</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">==&gt; Pouring pixman-0.34.0.el_capitan.bottle.tar.gz</span><br><span class="line">Error: The `brew link` step did not complete successfully</span><br><span class="line">The formula built, but is not symlinked into /usr/local</span><br><span class="line">Could not symlink include/pixman-1</span><br><span class="line">/usr/local/include is not writable.</span><br><span class="line"></span><br><span class="line">You can try again using:</span><br><span class="line">  brew link pixman</span><br><span class="line">==&gt; Summary</span><br><span class="line">🍺  /usr/local/Cellar/pixman/0.34.0: 11 files, 1.2M</span><br><span class="line">==&gt; Installing qemu</span><br><span class="line">==&gt; Downloading https://homebrew.bintray.com/bottles/qemu-2.5.0_2.el_capitan.bot</span><br><span class="line">########################################                                  56.1%m######################################################################## 100.0%</span><br><span class="line">==&gt; Pouring qemu-2.5.0_2.el_capitan.bottle.tar.gz</span><br><span class="line">🍺  /usr/local/Cellar/qemu/2.5.0_2: 125 files, 118.3M</span><br></pre></td></tr></table></figure></p>
+	  
+	</div>
+
+	<div>
+  	<center>
+	<div class="pagination">
+<ul class="pagination">
+	 
+				
+    	<li class="prev"><a href="/Blog/2016/04/05/3-sum/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>Prev</a></li>
+  		
+
+        <li><a href="/Blog/archives"><i class="fa fa-archive"></i>Archive</a></li>
+
+		
+		   <li class="next"><a href="/Blog/2016/03/21/调试的技巧/" class="alignright next">Next<i class="fa fa-arrow-circle-o-right"></i></a></li>         
+        
+	
+</ul>
+</div>
+
+    </center>
+	</div>
+
+    <!-- share -->
+    
+        
+    <div class="bdsharebuttonbox">
+        <a href="#" class="bds_more" data-cmd="more"></a>
+        <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+        <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+        <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+        <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+        <a href="#" class="bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+        <a href="#" class="bds_evernotecn" data-cmd="evernotecn" title="分享到印象笔记"></a>
+        <a href="#" class="bds_youdao" data-cmd="youdao" title="分享到有道云笔记"></a>
+        <a href="#" class="bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+    </div>
+    <script>
+        window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};
+        with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+    </script>
+
+
+        
+
+    
+	
+	<!-- comment -->
+	
+<section id="comment">
+  <h2 class="title">Comments</h2>
+
+  
+  	 <div class="ds-thread" data-thread-key="2016/04/05/OSX安装qemu/" data-title="OSX安装qemu" data-url="http://ValyrianSteel.github.io/Blog/Blog/2016/04/05/OSX安装qemu/"></div>  
+  
+</section>
+
+	</div> <!-- col-md-9/col-md-12 -->
+		
+	
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2016-04-05 
+	</div>
+	
+
+	<!-- categories -->
+    
+
+	<!-- tags -->
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	</div>
+		
+
+</div><!-- row -->
+
+<script type="text/javascript">
+  var duoshuoQuery = { short_name: 'valyrian' };
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';
+    ds.async = true;
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
+
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+  &copy; 2016 Valyrian
+  
+      with help from <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>.    
+</p> </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/Blog/js/jquery.imagesloaded.min.js"></script>
+<script src="/Blog/js/gallery.js"></script>
+<script src="/Blog/js/bootstrap.min.js"></script>
+<script src="/Blog/js/main.js"></script>
+<script src="/Blog/js/search.js"></script> 
+
+
+<link rel="stylesheet" href="/Blog/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/Blog/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/Blog/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+</body>
+   </html>

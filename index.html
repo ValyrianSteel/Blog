@@ -1,335 +1,512 @@
-
- <!DOCTYPE HTML>
-<html >
+<!DOCTYPE HTML>
+<html>
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   
-    <title>Valyrian&#39;sBlog</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
-    
-    <meta name="author" content="Valyrian">
-    
-    
-    
-    
-    
-    <link rel="icon" href="/Blog/img/favicon.ico">
-    
-    
-    <link rel="apple-touch-icon" href="/Blog/img/pacman.jpg">
-    <link rel="apple-touch-icon-precomposed" href="/Blog/img/pacman.jpg">
-    
-    <link rel="stylesheet" href="/Blog/css/style.css">
+  <title>Valyrian&#39;sBlog</title>
+  <meta name="author" content="Valyrian">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+  <meta property="og:site_name" content="Valyrian&#39;sBlog"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  
+  
+    <link href="/Blog/favicon.png" rel="icon">
+  
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/Blog/css/themes/cerulean.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/Blog/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/Blog/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/Blog/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/Blog/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/Blog/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/Blog/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+
+
+
 </head>
 
-  <body>
-    <header>
-      <div>
-		
-			<div id="imglogo">
-				<a href="/Blog/"><img src="/Blog/img/logo.svg" alt="Valyrian&#39;sBlog" title="Valyrian&#39;sBlog"/></a>
-			</div>
-			
-			<div id="textlogo">
-				<h1 class="site-name"><a href="/Blog/" title="Valyrian&#39;sBlog">Valyrian&#39;sBlog</a></h1>
-				<h2 class="blog-motto">God is in the details.  ---Mies van der Rohe</h2>
-			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
-			</a></div>
-			<nav class="animated">
-				<ul>
-					
-						<li><a href="/Blog/">Home</a></li>
-					
-						<li><a href="/Blog/archives">Archives</a></li>
-					
-					<li>
-					
-					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
-						<label>Search</label>
-						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
-						<input type="hidden" name="q" value="site:ValyrianSteel.github.io/Blog">
-					</form>
-					
-					</li>
-				</ul>
-			</nav>			
-</div>
-
-    </header>
-    <div id="container">
-      <div id="main">
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/Blog/2016/03/20/C中的环境变量/" title="C中的环境变量" itemprop="url">
-  
-    <h1 itemprop="name">C中的环境变量</h1>
-    
-     
-           <p itemprop="description" >使用getenv12345678910111213#include &amp;lt;stdlib.h&amp;gt; //getenv, atoi#include &amp;lt;stdio.h&amp;gt;  //printfint main()&amp;#123;    char *repstext = gete</p>
-        
-    
-    <time datetime="2016-03-20T13:27:02.000Z" itemprop="datePublished">2016-03-20</time>
-  </a>
-</section>
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/Blog/2016/03/20/C-C-编译环境搭建/" title="C/C++编译环境搭建" itemprop="url">
-  
-    <h1 itemprop="name">C/C++编译环境搭建</h1>
-    
-     
-           <p itemprop="description" >包管理器编译器gccClang
-调试器gdb
-Valgrind测试内存使用错误
-gprof代码剖析器
-makepkg-config寻找库的工具，使用见下面库文件的路径。
-产生文档的工具编辑器的选择EmacsvimKatenano
-一些IDE的选择AutotoolsGitshell</p>
-        
-    
-    <time datetime="2016-03-20T12:05:11.000Z" itemprop="datePublished">2016-03-20</time>
-  </a>
-</section>
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/Blog/2016/03/17/如何避免使用goto语句/" title="如何避免使用goto语句" itemprop="url">
-  
-    <h1 itemprop="name">如何避免使用goto语句</h1>
-    
-     
-           <p itemprop="description" >setjmp()/longjmp()非局部跳转语句: setjmp和longjmp函数。非局部指不像普通C语言goto，语句在一个函数内实施的跳转，而是在栈上跳过若干调用帧，返回到当前函数调用路径上的某一个函数中。123#include &amp;lt;setjmp.h&amp;gt;int s</p>
-        
-    
-    <time datetime="2016-03-17T08:08:20.000Z" itemprop="datePublished">2016-03-17</time>
-  </a>
-</section>
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/Blog/2016/03/15/特定两数之和求下标/" title="特定两数之和求下标" itemprop="url">
-  
-    <h1 itemprop="name">特定两数之和求下标</h1>
-    
-     
-           <p itemprop="description" >问题Input：numbers={2, 7, 11, 15}, target=9
-Output: index1=1, index2=2
-方案用一个哈希表，存储每个数对应的下标，复杂度O(n)
-代码1234567891011121314151617181920class Solut</p>
-        
-    
-    <time datetime="2016-03-15T02:34:15.000Z" itemprop="datePublished">2016-03-15</time>
-  </a>
-</section>
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/Blog/2016/03/12/通过解释器执行程序/" title="通过解释器执行程序" itemprop="url">
-  
-    <h1 itemprop="name">通过解释器执行程序</h1>
-    
-     
-           <p itemprop="description" >若通过语法分析得到语法分析树，解释器只需要从抽象语法树的根节点开始遍历该树直到叶节点，并计算各节点的内容便可得到结果。
-eval方法eval方法将计算以该节点为根的子树对应的语句、表达式及子表达式，并返回执行结果。
-环境对象环境对象是一种用于记录变量名称与值的对应关系的数据结构，</p>
-        
-    
-    <time datetime="2016-03-12T01:59:04.000Z" itemprop="datePublished">2016-03-12</time>
-  </a>
-</section>
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/Blog/2016/03/08/如何阅读代码/" title="如何阅读代码" itemprop="url">
-  
-    <h1 itemprop="name">如何阅读代码</h1>
-    
-     
-           <p itemprop="description" >要知道的高级C数据类型指针通常的用法创建链式数据结构数据结构的动态分配实现引用调用访问和遍历数据集合传递数组参数作为函数的引用作为其他值的别名表示字符串直接访问系统内存结构体</p>
-        
-    
-    <time datetime="2016-03-08T06:30:02.000Z" itemprop="datePublished">2016-03-08</time>
-  </a>
-</section>
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/Blog/2016/03/08/寻找未排序数组的最长连续序列/" title="寻找未排序数组的最长连续序列" itemprop="url">
-  
-    <h1 itemprop="name">寻找未排序数组的最长连续序列</h1>
-    
-     
-           <p itemprop="description" >问题：[100, 4, 200, 1, 3, 2] 最长连续序列：[1, 2, 3, 4]。复杂度：O(n)
-方法一先排序，复杂度O(nlogn)。要求O(n)，用哈希表。用一个哈希表记录每个元素是否使用，对每个元素，已该元素为中心，向左右扩张，直到不连续为止，记录下最长的长度。</p>
-        
-    
-    <time datetime="2016-03-08T02:31:26.000Z" itemprop="datePublished">2016-03-08</time>
-  </a>
-</section>
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/Blog/2016/03/07/两个已排序数组的第K大元素/" title="两个已排序数组的第K大元素" itemprop="url">
-  
-    <h1 itemprop="name">两个已排序数组的第K大元素</h1>
-    
-     
-           <p itemprop="description" >两个已排序数组A[m]、B[n]，求两者所有元素的第k大的元素
-方法一直接merge两个数组，然后求第K大的元素
-方法二使用计数器h记录当前已经找到第m大的元素；使用两个指针pA和pB，分别指向数组A和B；如果A当前元素小，pA++，m++;如果B当前元素小，pB++，m++;当</p>
-        
-    
-    <time datetime="2016-03-07T02:34:28.000Z" itemprop="datePublished">2016-03-07</time>
-  </a>
-</section>
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/Blog/2016/03/04/循环有序数组的查找/" title="循环有序数组的查找" itemprop="url">
-  
-    <h1 itemprop="name">循环有序数组的查找</h1>
-    
-     
-           <p itemprop="description" >循环有序数组：把一个有序数组从某个（未知）位置处截为两段，把前一段放到后一段的后面（数组元素两部分分别有序）采用二分查找，时间复杂度要求O(log n)
-主要难点：二分查找时左右边界的确定确定分割点之后，前半段和后半段中必然有一部分有序：12345678if(nums[first</p>
-        
-    
-    <time datetime="2016-03-04T05:45:23.000Z" itemprop="datePublished">2016-03-04</time>
-  </a>
-</section>
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/Blog/2016/03/04/从已排序数组删除冗余元素/" title="从已排序数组删除冗余元素" itemprop="url">
-  
-    <h1 itemprop="name">从已排序数组删除冗余元素</h1>
-    
-     
-           <p itemprop="description" >123456789101112131415// 要求冗余元素至多为N个。class Solution &amp;#123;public:	int removeDuplicates(vector&amp;lt;int&amp;gt;&amp;amp; nums) &amp;#123;		if (nums.size() &amp;</p>
-        
-    
-    <time datetime="2016-03-04T02:35:27.000Z" itemprop="datePublished">2016-03-04</time>
-  </a>
-</section>
-
-
-  <nav id="page-nav" class="clearfix">
-    <span class="page-number current">1</span><a class="page-number" href="/Blog/page/2/">2</a><a class="extend next" rel="next" href="/Blog/page/2/">Next &raquo;</a>
-  </nav>
-
-</div>
-      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
-
-<div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
-<aside class="clearfix">
-
-  
-
-  
-<div class="tagslist">
-	<p class="asidetitle">Tags</p>
-		<ul class="clearfix">
-		
-			<li><a href="/Blog/tags/C编程的一些技术/" title="C编程的一些技术">C编程的一些技术<sup>2</sup></a></li>
-		
-			<li><a href="/Blog/tags/散列/" title="散列">散列<sup>1</sup></a></li>
-		
-			<li><a href="/Blog/tags/程序设计语言实现/" title="程序设计语言实现">程序设计语言实现<sup>1</sup></a></li>
-		
-			<li><a href="/Blog/tags/算法/" title="算法">算法<sup>1</sup></a></li>
-		
-			<li><a href="/Blog/tags/编程/" title="编程">编程<sup>1</sup></a></li>
-		
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+       <a class="navbar-brand" href="/Blog/">Valyrian&#39;sBlog</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/Blog/archives" title="All the articles.">
+			  <i class="fa fa-archive"></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/Blog/categories" title="All the categories.">
+			  <i class="fa fa-folder"></i>Categories
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/Blog/tags" title="All the tags.">
+			  <i class="fa fa-tags"></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/Blog/about" title="About me.">
+			  <i class="fa fa-user"></i>About
+			</a>
+		  </li>
+		  
 		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 <div class="page-header page-header-inverse ">
+  <h1 class="title title-inverse ">God is in the details.  ---Mies van der Rohe</h1>
 </div>
 
+<div class="row page">
 
-  <div class="rsspart">
-	<a href="null" target="_blank" title="rss">RSS</a>
-</div>
-
-</aside>
-</div>
-    </div>
-    <footer><div id="footer" >
 	
-	<div class="line">
-		<span></span>
-		<div class="author"></div>
+	<div class="col-md-9">
+	
+
+		<div class="slogan">
+      <i class="fa fa-heart"></i>
+      Happy everyday!
+</div>    
+		<div id="top_search"></div>
+		<div class="mypage">
+		
+		<!-- title and entry -->
+		
+			
+	
+	<!-- display as entry -->	
+		<h3 class="title">
+			<div class="date"> 2016-04-05 </div>
+			<div class="article-title"><a href="/Blog/2016/04/05/3-sum/" title="3-sum">3-sum</a></div>						
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<p>给定一个数组，求和为0的三个数(a+b+c=0)<br>• (a, b, c) 非降序 (ie, a ≤ b ≤ c)<br>• 例如：S = {-1 0 1 2 -1 -4}.<br>  解为：(-1, 0, 1)<br>        (-1, -1, 2)</p>
+
+	
 	</div>
-	
-	
-	<div class="social-font clearfix">
-		
-		
-		
-		<a href="https://github.com/ValyrianSteel" target="_blank" title="github"></a>
-		
-		
-		
-	</div>
-		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2016 
-		
-		<a href="http://ValyrianSteel.github.io/Blog" target="_blank" title="Valyrian">Valyrian</a>
-		
-		</p>
+  <a type="button" href="/Blog/2016/04/05/3-sum/#more" class="btn btn-default more">Read More</a>
 </div>
-</footer>
-    <script src="/Blog/js/jquery-2.1.0.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){ 
-  $('.navbar').click(function(){
-    $('header nav').toggleClass('shownav');
-  });
-  var myWidth = 0;
-  function getSize(){
-    if( typeof( window.innerWidth ) == 'number' ) {
-      myWidth = window.innerWidth;
-    } else if( document.documentElement && document.documentElement.clientWidth) {
-      myWidth = document.documentElement.clientWidth;
-    };
-  };
-  var m = $('#main'),
-      a = $('#asidepart'),
-      c = $('.closeaside'),
-      o = $('.openaside');
-  $(window).resize(function(){
-    getSize(); 
-    if (myWidth >= 1024) {
-      $('header nav').removeClass('shownav');
-    }else
-    {
-      m.removeClass('moveMain');
-      a.css('display', 'block').removeClass('fadeOut');
-      o.css('display', 'none');
+
+		
+			
+	
+	<!-- display as entry -->	
+		<h3 class="title">
+			<div class="date"> 2016-04-05 </div>
+			<div class="article-title"><a href="/Blog/2016/04/05/OSX安装qemu/" >OSX安装qemu</a></div>						
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<p><code>sudo brew install qemu</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br></pre></td><td class="code"><pre><span class="line">==&gt; Installing dependencies for qemu: jpeg, libpng, libtasn1, gmp, nettle</span><br><span class="line">==&gt; Installing qemu dependency: jpeg</span><br><span class="line">==&gt; Downloading https://homebrew.bintray.com/bottles/jpeg-8d.el_capitan.bottle.2</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">==&gt; Pouring jpeg-8d.el_capitan.bottle.2.tar.gz</span><br><span class="line">Error: The `brew link` step did not complete successfully</span><br><span class="line">The formula built, but is not symlinked into /usr/local</span><br><span class="line">Could not symlink include/jconfig.h</span><br><span class="line">/usr/local/include is not writable.</span><br><span class="line"></span><br><span class="line">You can try again using:</span><br><span class="line">  brew link jpeg</span><br><span class="line">==&gt; Summary</span><br><span class="line">🍺  /usr/local/Cellar/jpeg/8d: 18 files, 712.4K</span><br><span class="line">==&gt; Installing qemu dependency: libpng</span><br><span class="line">==&gt; Downloading https://homebrew.bintray.com/bottles/libpng-1.6.21.el_capitan.bo</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">==&gt; Pouring libpng-1.6.21.el_capitan.bottle.tar.gz</span><br><span class="line">Error: The `brew link` step did not complete successfully</span><br><span class="line">The formula built, but is not symlinked into /usr/local</span><br><span class="line">Could not symlink include/libpng16</span><br><span class="line">/usr/local/include is not writable.</span><br><span class="line"></span><br><span class="line">You can try again using:</span><br><span class="line">  brew link libpng</span><br><span class="line">==&gt; Summary</span><br><span class="line">🍺  /usr/local/Cellar/libpng/1.6.21: 17 files, 1.2M</span><br><span class="line">==&gt; Installing qemu dependency: libtasn1</span><br><span class="line">==&gt; Downloading https://homebrew.bintray.com/bottles/libtasn1-4.7.el_capitan.bot</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">==&gt; Pouring libtasn1-4.7.el_capitan.bottle.tar.gz</span><br><span class="line">Error: The `brew link` step did not complete successfully</span><br><span class="line">The formula built, but is not symlinked into /usr/local</span><br><span class="line">Could not symlink include/libtasn1.h</span><br><span class="line">/usr/local/include is not writable.</span><br><span class="line"></span><br><span class="line">You can try again using:</span><br><span class="line">  brew link libtasn1</span><br><span class="line">==&gt; Summary</span><br><span class="line">🍺  /usr/local/Cellar/libtasn1/4.7: 57 files, 434.1K</span><br><span class="line">==&gt; Installing qemu dependency: gmp</span><br><span class="line">==&gt; Downloading https://homebrew.bintray.com/bottles/gmp-6.1.0.el_capitan.bottle</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">==&gt; Pouring gmp-6.1.0.el_capitan.bottle.tar.gz</span><br><span class="line">Error: The `brew link` step did not complete successfully</span><br><span class="line">The formula built, but is not symlinked into /usr/local</span><br><span class="line">Could not symlink include/gmp.h</span><br><span class="line">/usr/local/include is not writable.</span><br><span class="line"></span><br><span class="line">You can try again using:</span><br><span class="line">  brew link gmp</span><br><span class="line">==&gt; Summary</span><br><span class="line">🍺  /usr/local/Cellar/gmp/6.1.0: 15 files, 3.2M</span><br><span class="line">==&gt; Installing qemu dependency: nettle</span><br><span class="line">==&gt; Downloading https://homebrew.bintray.com/bottles/nettle-3.2.el_capitan.bottl</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">==&gt; Pouring nettle-3.2.el_capitan.bottle.tar.gz</span><br><span class="line">Error: The `brew link` step did not complete successfully</span><br><span class="line">The formula built, but is not symlinked into /usr/local</span><br><span class="line">Could not symlink include/nettle</span><br><span class="line">/usr/local/include is not writable.</span><br><span class="line"></span><br><span class="line">You can try again using:</span><br><span class="line">  brew link nettle</span><br><span class="line">==&gt; Summary</span><br><span class="line">🍺  /usr/local/Cellar/nettle/3.2: 75 files, 1.9M</span><br><span class="line">==&gt; Installing qemu dependency: gnutls</span><br><span class="line">==&gt; Downloading https://homebrew.bintray.com/bottles/gnutls-3.4.10.el_capitan.bo</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">==&gt; Pouring gnutls-3.4.10.el_capitan.bottle.tar.gz</span><br><span class="line">Error: The `brew link` step did not complete successfully</span><br><span class="line">The formula built, but is not symlinked into /usr/local</span><br><span class="line">Could not symlink include/gnutls</span><br><span class="line">/usr/local/include is not writable.</span><br><span class="line"></span><br><span class="line">You can try again using:</span><br><span class="line">  brew link gnutls</span><br><span class="line">==&gt; Summary</span><br><span class="line">🍺  /usr/local/Cellar/gnutls/3.4.10: 1,094 files, 6.8M</span><br><span class="line">==&gt; Installing qemu dependency: gettext</span><br><span class="line">==&gt; Downloading https://homebrew.bintray.com/bottles/gettext-0.19.7.el_capitan.b</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">==&gt; Pouring gettext-0.19.7.el_capitan.bottle.tar.gz</span><br><span class="line">==&gt; Caveats</span><br><span class="line">This formula is keg-only, which means it was not symlinked into /usr/local.</span><br><span class="line"></span><br><span class="line">OS X provides the BSD gettext library and some software gets confused if both are in the library path.</span><br><span class="line"></span><br><span class="line">Generally there are no consequences of this for you. If you build your</span><br><span class="line">own software and it requires this formula, you&apos;ll need to add to your</span><br><span class="line">build variables:</span><br><span class="line"></span><br><span class="line">    LDFLAGS:  -L/usr/local/opt/gettext/lib</span><br><span class="line">    CPPFLAGS: -I/usr/local/opt/gettext/include</span><br><span class="line"></span><br><span class="line">==&gt; Summary</span><br><span class="line">🍺  /usr/local/Cellar/gettext/0.19.7: 1,929 files, 16.6M</span><br><span class="line">==&gt; Installing qemu dependency: libffi</span><br><span class="line">==&gt; Downloading https://homebrew.bintray.com/bottles/libffi-3.0.13.el_capitan.bo</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">==&gt; Pouring libffi-3.0.13.el_capitan.bottle.tar.gz</span><br><span class="line">==&gt; Caveats</span><br><span class="line">This formula is keg-only, which means it was not symlinked into /usr/local.</span><br><span class="line"></span><br><span class="line">Some formulae require a newer version of libffi.</span><br><span class="line"></span><br><span class="line">Generally there are no consequences of this for you. If you build your</span><br><span class="line">own software and it requires this formula, you&apos;ll need to add to your</span><br><span class="line">build variables:</span><br><span class="line"></span><br><span class="line">    LDFLAGS:  -L/usr/local/opt/libffi/lib</span><br><span class="line"></span><br><span class="line">==&gt; Summary</span><br><span class="line">🍺  /usr/local/Cellar/libffi/3.0.13: 14 files, 373.2K</span><br><span class="line">==&gt; Installing qemu dependency: glib</span><br><span class="line">==&gt; Downloading https://homebrew.bintray.com/bottles/glib-2.46.2.el_capitan.bott</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">==&gt; Pouring glib-2.46.2.el_capitan.bottle.tar.gz</span><br><span class="line">Error: The `brew link` step did not complete successfully</span><br><span class="line">The formula built, but is not symlinked into /usr/local</span><br><span class="line">Could not symlink include/gio-unix-2.0</span><br><span class="line">/usr/local/include is not writable.</span><br><span class="line"></span><br><span class="line">You can try again using:</span><br><span class="line">  brew link glib</span><br><span class="line">Warning: The post-install step did not complete successfully</span><br><span class="line">You can try again using `brew postinstall glib`</span><br><span class="line">==&gt; Summary</span><br><span class="line">🍺  /usr/local/Cellar/glib/2.46.2: 421 files, 22.3M</span><br><span class="line">==&gt; Installing qemu dependency: pixman</span><br><span class="line">==&gt; Downloading https://homebrew.bintray.com/bottles/pixman-0.34.0.el_capitan.bo</span><br><span class="line">######################################################################## 100.0%</span><br><span class="line">==&gt; Pouring pixman-0.34.0.el_capitan.bottle.tar.gz</span><br><span class="line">Error: The `brew link` step did not complete successfully</span><br><span class="line">The formula built, but is not symlinked into /usr/local</span><br><span class="line">Could not symlink include/pixman-1</span><br><span class="line">/usr/local/include is not writable.</span><br><span class="line"></span><br><span class="line">You can try again using:</span><br><span class="line">  brew link pixman</span><br><span class="line">==&gt; Summary</span><br><span class="line">🍺  /usr/local/Cellar/pixman/0.34.0: 11 files, 1.2M</span><br><span class="line">==&gt; Installing qemu</span><br><span class="line">==&gt; Downloading https://homebrew.bintray.com/bottles/qemu-2.5.0_2.el_capitan.bot</span><br><span class="line">########################################                                  56.1%m######################################################################## 100.0%</span><br><span class="line">==&gt; Pouring qemu-2.5.0_2.el_capitan.bottle.tar.gz</span><br><span class="line">🍺  /usr/local/Cellar/qemu/2.5.0_2: 125 files, 118.3M</span><br></pre></td></tr></table></figure></p>
+
+	
+	</div>
+  <a type="button" href="/Blog/2016/04/05/OSX安装qemu/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->	
+		<h3 class="title">
+			<div class="date"> 2016-03-21 </div>
+			<div class="article-title"><a href="/Blog/2016/03/21/调试的技巧/" >调试的技巧</a></div>						
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<h1 id="使用GDB调试工具"><a href="#使用GDB调试工具" class="headerlink" title="使用GDB调试工具"></a>使用GDB调试工具</h1><h2 id="堆栈帧"><a href="#堆栈帧" class="headerlink" title="堆栈帧"></a>堆栈帧</h2><h1 id="使用valgrind检查内存使用错误"><a href="#使用valgrind检查内存使用错误" class="headerlink" title="使用valgrind检查内存使用错误"></a>使用valgrind检查内存使用错误</h1><p><code>valgrind your_program</code></p>
+<h1 id="单元测试"><a href="#单元测试" class="headerlink" title="单元测试"></a>单元测试</h1>
+	
+	</div>
+  <a type="button" href="/Blog/2016/03/21/调试的技巧/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->	
+		<h3 class="title">
+			<div class="date"> 2016-03-20 </div>
+			<div class="article-title"><a href="/Blog/2016/03/20/C中的环境变量/" >C中的环境变量</a></div>						
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<h2 id="使用getenv"><a href="#使用getenv" class="headerlink" title="使用getenv"></a>使用getenv</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdlib.h&gt; //getenv, atoi</span><br><span class="line">#include &lt;stdio.h&gt;  //printf</span><br><span class="line"></span><br><span class="line">int main()&#123;</span><br><span class="line">    char *repstext = getenv(&quot;reps&quot;);</span><br><span class="line">    int reps = repstext ? atoi(repstext) : 10;</span><br><span class="line"></span><br><span class="line">    char *msg = getenv(&quot;msg&quot;);</span><br><span class="line">    if (!msg) msg = &quot;Hello.&quot;;</span><br><span class="line"></span><br><span class="line">    for (int i=0; i&lt; reps; i++)</span><br><span class="line">        printf(&quot;%s\n&quot;, msg);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>使用<code>reps=10 msg=&quot;Ha&quot; ./getenv</code>传递环境变量。</p>
+
+	
+	</div>
+  <a type="button" href="/Blog/2016/03/20/C中的环境变量/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->	
+		<h3 class="title">
+			<div class="date"> 2016-03-20 </div>
+			<div class="article-title"><a href="/Blog/2016/03/20/C-C-编译环境搭建/" >C/C++编译环境搭建</a></div>						
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<h1 id="包管理器"><a href="#包管理器" class="headerlink" title="包管理器"></a>包管理器</h1><h2 id="编译器"><a href="#编译器" class="headerlink" title="编译器"></a>编译器</h2><p><code>gcc</code><br><code>Clang</code></p>
+<h2 id="调试器"><a href="#调试器" class="headerlink" title="调试器"></a>调试器</h2><p><code>gdb</code></p>
+<h2 id="Valgrind"><a href="#Valgrind" class="headerlink" title="Valgrind"></a>Valgrind</h2><p>测试内存使用错误</p>
+<h2 id="gprof"><a href="#gprof" class="headerlink" title="gprof"></a>gprof</h2><p>代码剖析器</p>
+<h2 id="make"><a href="#make" class="headerlink" title="make"></a>make</h2><h2 id="pkg-config"><a href="#pkg-config" class="headerlink" title="pkg-config"></a>pkg-config</h2><p>pkg-config是向程序提供相应库的路径、版本号等信息的程序。<br>如：<br>$pkg-config –libs –cflags opencv<br>会显示如下信息：<br>-I/usr/include/opencv -lcxcore -lcv -lhighgui -lcvaux<br>得到的是用gcc编译连接时CFLAGS的参数。因此当我们需要编译连接某个库时，我们只需要把上面那行加入gcc 的参数里面即可。这也是configure的作用，它会检查你需要的包，产生相应的信息。<br>那pkg-config从哪儿知道这些信息的呢？它是从包名为xxx.pc这个文件中查找到的。拿上面那个例子说，它是从opencv.pc这个文件中查知的。<br>那pkg-config 又怎么会知道opencv.pc这个文件呢？下面我们看一下pkg-config是怎样工作的。<br>缺省情况下，pkg-config首先在prefix/lib/pkgconfig/中查找相关包（譬如opencv）对应的相应的文件（opencv.pc）。在linux上上述路径名为 /usr/lib/pkconfig/。若是没有找到，它也会到PKG_CONFIG_PATH这个环境变量所指定的路径下去找。若是没有找到，它就会报错，例如：<br><code>Package opencv was not found in the pkg-config search path.
+Perhaps you should add the directory containing</code>opencv.pc’<br>to the PKG_CONFIG_PATH environment variable<br>No package ‘opencv’ found<br>`</p>
+<p>寻找库的工具，使用见下面库文件的路径。</p>
+<h2 id="产生文档的工具"><a href="#产生文档的工具" class="headerlink" title="产生文档的工具"></a>产生文档的工具</h2><h2 id="编辑器的选择"><a href="#编辑器的选择" class="headerlink" title="编辑器的选择"></a>编辑器的选择</h2><p><code>Emacs</code><br><code>vim</code><br><code>Kate</code><br><code>nano</code></p>
+<h2 id="一些IDE的选择"><a href="#一些IDE的选择" class="headerlink" title="一些IDE的选择"></a>一些IDE的选择</h2><h2 id="Autotools"><a href="#Autotools" class="headerlink" title="Autotools"></a>Autotools</h2><h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><h2 id="shell的替代品"><a href="#shell的替代品" class="headerlink" title="shell的替代品"></a>shell的替代品</h2><h1 id="常用的编译器选项"><a href="#常用的编译器选项" class="headerlink" title="常用的编译器选项"></a>常用的编译器选项</h1><p><code>-g</code> - 加入调试符号<br><code>-std=gnu11</code> - C11标准<br><code>-O2</code> - 优化等级<br><code>-Wall</code> - 添加编译器警告</p>
+<h1 id="库的路径"><a href="#库的路径" class="headerlink" title="库的路径"></a>库的路径</h1><p>C程序设计时，常常遇到找不到路径的问题。<br>对路径的理解，有助于问题的排查。</p>
+<h2 id="库文件在哪里"><a href="#库文件在哪里" class="headerlink" title="库文件在哪里"></a>库文件在哪里</h2><p>典型的情况下，库存放的地方至少有三个：<br>1、操作系统预定义的安装库文件的目录<br>2、本地系统管理员的库安装目录，不会被操作系统的更新覆盖<br>3、通常情况下用户没有访问一些位置的权利，所以将一些库文件存放着用户主目录下<br><code>例子：</code><br>假如名为Libuseful的库安装在<code>/usr/local/</code>目录下，代码里已经包含了头文件<code>#include &lt;useful.h&gt;</code>。则可以用以下命令：<br><code>gcc -I/usr/local/include use_useful.c -o use_useful -L/usr/local/lib -luseful</code><br>• -I 指定搜索头文件的路径<br>• -L 指定库的搜索范围<br>• 注意库的顺序：如果specific.o依赖于Libbroad库，Libbroad依赖于Libgeneral，则库的顺序通常为<code>gcc specific.o -lbroad -lgeneral</code>才会成功。</p>
+<h2 id="库文件的查找"><a href="#库文件的查找" class="headerlink" title="库文件的查找"></a>库文件的查找</h2><p>搜索库的命令：（POSIX环境）<br><code>find /usr -name &#39;libuseful*&#39;</code><br>一般情况下，如果库的目标文件在<code>/somepath/lib</code>，那么对应的头文件一定在<code>/somepath/include</code><br>查找库的工具<code>pkg-config</code><br><code>pkg-config --libs libxml-2.0</code> 得到输出：<code>-lxml2</code><br><code>pkg-config --cflags libxml-2.0</code> 得到输出：<code>-I/usr/include/libxml2</code><br>即得到的是编译LibXML2所需要的所有选项。<br>在shell中，当把命令行用反引号包围时，这个命令行的反引号部分会被其自身的输出代替。<br>故输入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcc `pkg-config --cflags --libs libxml-2.0` -o specific specific.c</span><br></pre></td></tr></table></figure></p>
+<p>等价于：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gcc -I/usr/include/libxml2 -lxml2 -o specific specific.c</span><br></pre></td></tr></table></figure></p>
+<h2 id="在命令行里包含头文件"><a href="#在命令行里包含头文件" class="headerlink" title="在命令行里包含头文件"></a>在命令行里包含头文件</h2><p><code>gcc -include stdio.h</code><br>可以自己设置统一的头文件，包含通用的一些头文件，供编译时使用。（偷懒的做法）</p>
+<h1 id="Makefile的使用"><a href="#Makefile的使用" class="headerlink" title="Makefile的使用"></a>Makefile的使用</h1><p>一个基本的makefile：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">P=program_name</span><br><span class="line">OBJECTS=</span><br><span class="line">CFLAGS = -g -Wall -O3</span><br><span class="line">LDLIBS=</span><br><span class="line">CC=c99</span><br><span class="line">$(P): $(OBJECTS)</span><br></pre></td></tr></table></figure></p>
+<p>$(var) 设置变量<br>$@ 返回完整的目标文件名<br>$* 不带文件名后缀的输出文件<br>$&lt; 当前目标的文件名称<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">target: dependencies</span><br><span class="line">    script</span><br></pre></td></tr></table></figure></p>
+<p>…关于make的使用有待补充</p>
+<h1 id="Here-Documents-amp-Compiling-from-stdin"><a href="#Here-Documents-amp-Compiling-from-stdin" class="headerlink" title="Here Documents &amp; Compiling from stdin"></a>Here Documents &amp; Compiling from stdin</h1>
+	
+	</div>
+  <a type="button" href="/Blog/2016/03/20/C-C-编译环境搭建/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->	
+		<h3 class="title">
+			<div class="date"> 2016-03-17 </div>
+			<div class="article-title"><a href="/Blog/2016/03/17/如何避免使用goto语句/" >如何避免使用goto语句</a></div>						
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<h2 id="setjmp-longjmp"><a href="#setjmp-longjmp" class="headerlink" title="setjmp()/longjmp()"></a>setjmp()/longjmp()</h2><p><code>非局部跳转语句</code>: setjmp和longjmp函数。<br>非局部指不像普通C语言goto，语句在一个函数内实施的跳转，而是在栈上跳过若干调用帧，返回到当前函数调用路径上的某一个函数中。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;setjmp.h&gt;</span><br><span class="line">int setjmp(jmp_buf  env);   //返回值：若直接调用则返回0，</span><br><span class="line">void longjmp(jmp_buf env,int val);  //若从longjmp调用返回则返回非0值</span><br></pre></td></tr></table></figure></p>
+<p>·在希望返回到的位置调用setjmp，此位置在main函数中，因为直接调用该函数，所以其返回值为0<br>setjmp参数evn的类型是一个特殊的类型jmp_buf，这一数据类型是某种形式的数组，其中存放在调用longjmp时能用来恢复栈状态的所有信息。因为需要在另一个函数中引用env变量，所以规范的处理方式是将env变量定义为全局变量。<br>·当检查到一个错误时,则以两个参数调用longjmp函数，第一个就是在调用setjmp时所用的env，第二个参数是具有非0值的val，它将成为从setjmp处返回的值。使用第二个参数的原因是对于一个setjmp可以有多个longjmp。</p>
+
+	
+	</div>
+  <a type="button" href="/Blog/2016/03/17/如何避免使用goto语句/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->	
+		<h3 class="title">
+			<div class="date"> 2016-03-15 </div>
+			<div class="article-title"><a href="/Blog/2016/03/15/特定两数之和求下标/" >特定两数之和求下标</a></div>						
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p><code>Input：numbers={2, 7, 11, 15}, target=9
+Output: index1=1, index2=2</code></p>
+<h2 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h2><p>用一个哈希表，存储每个数对应的下标，复杂度O(n)</p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;int&gt; twoSum(vector&lt;int&gt; &amp;nums, int target) &#123;</span><br><span class="line">        unordered_map&lt;int, int&gt; mapping;</span><br><span class="line">        vector&lt;int&gt; result;</span><br><span class="line">        for (int i = 0; i &lt; nums.size(); i++) &#123;</span><br><span class="line">            mapping[nums[i]] = i;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        for (int i = 0; i &lt; nums.size(); i++) &#123;</span><br><span class="line">           const int gap = target - nums[i];</span><br><span class="line">           if (mapping.find(gap) != mapping.end() &amp;&amp; mapping[gap] &gt; i) &#123;</span><br><span class="line">                result.push_back(i + 1);</span><br><span class="line">                result.push_back(mapping[gap] + 1);</span><br><span class="line">                break;</span><br><span class="line">           &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+	
+	</div>
+  <a type="button" href="/Blog/2016/03/15/特定两数之和求下标/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->	
+		<h3 class="title">
+			<div class="date"> 2016-03-12 </div>
+			<div class="article-title"><a href="/Blog/2016/03/12/通过解释器执行程序/" >通过解释器执行程序</a></div>						
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<p>若通过语法分析得到语法分析树，解释器只需要从抽象语法树的根节点开始遍历该树直到叶节点，并计算各节点的内容便可得到结果。</p>
+<h2 id="eval方法"><a href="#eval方法" class="headerlink" title="eval方法"></a>eval方法</h2><p>eval方法将计算<code>以该节点为根的子树对应的语句、表达式及子表达式</code>，并返回执行结果。</p>
+<h2 id="环境对象"><a href="#环境对象" class="headerlink" title="环境对象"></a>环境对象</h2><p>环境对象是一种用于记录变量名称与值的对应关系的数据结构，常以哈希表的形式实现。<br>1、当程序中出现新变量时，由该变量的名称与初始值构成的键值对添加到哈希表；<br>2、之后遇到这一变量时，程序将搜索哈希表并取得它的值；<br>3、值的更新将更新键值对。</p>
+<h2 id="作用域与生存周期"><a href="#作用域与生存周期" class="headerlink" title="作用域与生存周期"></a>作用域与生存周期</h2><p>scope<br>extent</p>
+
+	
+	</div>
+  <a type="button" href="/Blog/2016/03/12/通过解释器执行程序/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->	
+		<h3 class="title">
+			<div class="date"> 2016-03-08 </div>
+			<div class="article-title"><a href="/Blog/2016/03/08/如何阅读代码/" >如何阅读代码</a></div>						
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<h2 id="要知道的高级C数据类型"><a href="#要知道的高级C数据类型" class="headerlink" title="要知道的高级C数据类型"></a>要知道的高级C数据类型</h2><h3 id="指针通常的用法"><a href="#指针通常的用法" class="headerlink" title="指针通常的用法"></a>指针通常的用法</h3><h4 id="创建链式数据结构"><a href="#创建链式数据结构" class="headerlink" title="创建链式数据结构"></a>创建链式数据结构</h4><h4 id="数据结构的动态分配"><a href="#数据结构的动态分配" class="headerlink" title="数据结构的动态分配"></a>数据结构的动态分配</h4><h4 id="实现引用调用"><a href="#实现引用调用" class="headerlink" title="实现引用调用"></a>实现引用调用</h4><h4 id="访问和遍历数据集合"><a href="#访问和遍历数据集合" class="headerlink" title="访问和遍历数据集合"></a>访问和遍历数据集合</h4><h4 id="传递数组参数"><a href="#传递数组参数" class="headerlink" title="传递数组参数"></a>传递数组参数</h4><h4 id="作为函数的引用"><a href="#作为函数的引用" class="headerlink" title="作为函数的引用"></a>作为函数的引用</h4><h4 id="作为其他值的别名"><a href="#作为其他值的别名" class="headerlink" title="作为其他值的别名"></a>作为其他值的别名</h4><h4 id="表示字符串"><a href="#表示字符串" class="headerlink" title="表示字符串"></a>表示字符串</h4><h4 id="直接访问系统内存"><a href="#直接访问系统内存" class="headerlink" title="直接访问系统内存"></a>直接访问系统内存</h4><h3 id="结构体"><a href="#结构体" class="headerlink" title="结构体"></a>结构体</h3>
+	
+	</div>
+  <a type="button" href="/Blog/2016/03/08/如何阅读代码/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+			
+	
+	<!-- display as entry -->	
+		<h3 class="title">
+			<div class="date"> 2016-03-08 </div>
+			<div class="article-title"><a href="/Blog/2016/03/08/寻找未排序数组的最长连续序列/" >寻找未排序数组的最长连续序列</a></div>						
+		</h3>
+	
+
+
+			<div class="entry">
+  <div class="row">
+	
+	
+		<h3 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h3><p>[100, 4, 200, 1, 3, 2] 最长连续序列：[1, 2, 3, 4]。<br>复杂度：O(n)</p>
+<h3 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h3><p>先排序，复杂度O(nlogn)。<br>要求O(n)，用哈希表。用一个哈希表记录每个元素是否使用，对每个元素，已该元素为中心，向左右扩张，直到不连续为止，记录下最长的长度。<br><code>[unordered_map](http://www.cplusplus.com/reference/unordered_map/unordered_map/)</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">	int longestConsecutive(const vector&lt;int&gt; &amp;nums) &#123;</span><br><span class="line">		unordered_map&lt;int, bool&gt; used;</span><br><span class="line">		for (auto i : nums) used[i] = false;</span><br><span class="line"></span><br><span class="line">		int longest = 0;</span><br><span class="line"></span><br><span class="line">		for (auto i : nums) &#123;</span><br><span class="line">			if (nums[i]) continue;</span><br><span class="line"></span><br><span class="line">			int length = 1;</span><br><span class="line">			used[i] = true;</span><br><span class="line"></span><br><span class="line">			for (int j = i + 1; used.find(j) != used.end(); ++j) &#123;</span><br><span class="line">				used[j] = true;</span><br><span class="line">				++length;</span><br><span class="line">			&#125;</span><br><span class="line">			for (int j = i - 1; used.find(j) != used.end(); --j) &#123;</span><br><span class="line">				used[j] = true;</span><br><span class="line">				++length;</span><br><span class="line">			&#125;</span><br><span class="line"></span><br><span class="line">			longest = max(longest, length);</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		return longest;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<h3 id="方法二：聚类操作"><a href="#方法二：聚类操作" class="headerlink" title="方法二：聚类操作"></a>方法二：聚类操作</h3><p>·待补充</p>
+
+	
+	</div>
+  <a type="button" href="/Blog/2016/03/08/寻找未排序数组的最长连续序列/#more" class="btn btn-default more">Read More</a>
+</div>
+
+		
+
+		</div>
+
+		<!-- pagination -->
+		<div>
+  		<center>
+		<div class="pagination">
+<ul class="pagination">
+	 
+		
+          <li class="prev disabled"><a><i class="fa fa-arrow-circle-o-left"></i>Prev</a></li>
         
-    }
-  });
-  c.click(function(){
-    a.addClass('fadeOut').css('display', 'none');
-    o.css('display', 'block').addClass('fadeIn');
-    m.addClass('moveMain');
-  });
-  o.click(function(){
-    o.css('display', 'none').removeClass('beforeFadeIn');
-    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
-    m.removeClass('moveMain');
-  });
-  $(window).scroll(function(){
-    o.css("top",Math.max(80,260-$(this).scrollTop()));
-  });
-});
+
+        <li><a href="/Blog/"><i class="fa fa-home"></i>Home</a></li>
+
+		
+		   <li class="next"> <a href="/Blog/page/2/" class="alignright next">Next<i class="fa fa-arrow-circle-o-right"></i></a> </li>          
+        
+	
+</ul>
+</div>
+
+  		</center>
+		</div>
+
+		
+		
+	</div> <!-- col-md-9 -->
+
+	
+		<div class="col-md-3">
+	<div id="sidebar">
+	
+			
+  <div id="site_search">
+   <div class="form-group">
+    <input type="text" id="local-search-input" name="q" results="0" placeholder="Search" class="st-search-input st-default-search-input form-control"/>
+   </div>  
+  <div id="local-search-result"></div>
+  </div>
+
+
+		
+			
+		
+			
+	<div class="widget">
+		<h4>Tag Cloud</h4>
+		<ul class="tag_box inline list-unstyled">		
+		
+			<li><a href="/Blog/tags/C编程的一些技术/">C编程的一些技术<span>2</span></a></li>
+		
+			<li><a href="/Blog/tags/编程/">编程<span>1</span></a></li>
+		
+			<li><a href="/Blog/tags/算法/">算法<span>2</span></a></li>
+		
+			<li><a href="/Blog/tags/C编程的一些技巧/">C编程的一些技巧<span>1</span></a></li>
+		
+			<li><a href="/Blog/tags/散列/">散列<span>1</span></a></li>
+		
+			<li><a href="/Blog/tags/程序设计语言实现/">程序设计语言实现<span>1</span></a></li>
+		
+		 
+		</ul>
+	</div>
+
+
+		
+			
+<div class="widget">
+  <h4>Recent Posts</h4>
+  <ul class="entry list-unstyled">
+    
+      <li>
+        <a href="/Blog/2016/04/05/3-sum/"  title="3-sum" ><i class="fa fa-file-o"></i>3-sum</a>
+      </li>
+    
+      <li>
+        <a href="/Blog/2016/04/05/OSX安装qemu/" ><i class="fa fa-file-o"></i>OSX安装qemu</a>
+      </li>
+    
+      <li>
+        <a href="/Blog/2016/03/21/调试的技巧/" ><i class="fa fa-file-o"></i>调试的技巧</a>
+      </li>
+    
+      <li>
+        <a href="/Blog/2016/03/20/C中的环境变量/" ><i class="fa fa-file-o"></i>C中的环境变量</a>
+      </li>
+    
+      <li>
+        <a href="/Blog/2016/03/20/C-C-编译环境搭建/" ><i class="fa fa-file-o"></i>C/C++编译环境搭建</a>
+      </li>
+    
+  </ul>
+</div>
+
+		
+			
+<div class="widget">
+	<h4>Links</h4>
+	<ul class="blogroll list-unstyled">
+	
+		<li><i class="fa fa-github"></i><a href="http://www.github.com/ValyrianSteel" title="My Github account." target="_blank"]);">My Github</a></li>
+	
+		<li><i class="fa fa-linkedin"></i><a href="" title="My Linkin account." target="_blank"]);">My LinkedIn</a></li>
+	
+	</ul>
+</div>
+
+
+		
+	</div> <!-- sidebar -->
+</div> <!-- col-md-3 -->
+
+	
+	
+</div> <!-- row-fluid -->
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+  &copy; 2016 Valyrian
+  
+      with help from <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a>. Theme by <a href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>.    
+</p> </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/Blog/js/jquery.imagesloaded.min.js"></script>
+<script src="/Blog/js/gallery.js"></script>
+<script src="/Blog/js/bootstrap.min.js"></script>
+<script src="/Blog/js/main.js"></script>
+<script src="/Blog/js/search.js"></script> 
+
+
+<link rel="stylesheet" href="/Blog/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/Blog/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
 </script>
 
 
 
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/Blog/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
 
-
-
-
-  </body>
- </html>
+</body>
+   </html>
